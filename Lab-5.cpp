@@ -8,10 +8,10 @@ int main() {
 
     cin >> k;
 
-    int R[k];
+    float R[k];
 
-    int min_positive = 10000000;
-    int max_negative = -1000000;
+    float min_positive = 10000000;
+    float max_negative = -1000000;
 
     for (int i = 0; i < k; i++) {
         cin >> R[i];
