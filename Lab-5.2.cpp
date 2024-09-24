@@ -12,7 +12,7 @@ int main() {
 
     for (int i = 0; i < 5; ++i) {
         for (int j = 0; j < 5; ++j) {
-            B[i][j] = rand() % 21 - 10;
+            B[i][j] = rand() % 51 - 25;
         }
     }
 
