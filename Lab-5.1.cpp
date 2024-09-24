@@ -14,7 +14,7 @@ int main() {
     float R[k];
 
     for (int i = 0; i < k; i++) {
-        R[i] = rand() % 21 - 10;
+        R[i] = rand() % 51 - 25;
     }
 
     cout << "Сгенерированный массив R:" << endl;
