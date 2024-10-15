@@ -5,6 +5,7 @@ using namespace std;
 
 struct Employee {
     string name;
+    int age;
 };
 
 int main() {
@@ -17,20 +18,30 @@ int main() {
     for (int i = 0; i < numEmployees; ++i) {
         cout << "Введите имя сотрудника: ";
         cin >> employees[i].name;
+        cout << "Введите возраст сотрудника: ";
+        cin >> employees[i].age;
     }
 
     string searchName;
     cout << "Введите имя сотрудника для поиска: ";
     cin >> searchName;
 
+    int searchAge;
+    cout << "Введите возраст сотрудника для поиска: ";
+    cin >> searchAge;
+
+    bool found = false;
+
     for (int i = 0; i < numEmployees; ++i) {
-        if (employees[i].name == searchName) {
-            cout << "Сотрудник найден: " << employees[i].name << endl;
-            return 0;
+        if (employees[i].name == searchName && employees[i].age == searchAge) {
+            cout << "Сотрудник найден: " << employees[i].name << ", Возраст: " << employees[i].age << endl;
+            found = true;
         }
     }
 
-    cout << "Сотрудник с именем " << searchName << " не найден." << endl;
+    if (!found) {
+        cout << "Сотрудники с именем " << searchName << " и возрастом " << searchAge << " не найдены." << endl;
+    }
 
     return 0;
 }
