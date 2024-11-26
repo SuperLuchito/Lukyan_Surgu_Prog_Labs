@@ -22,7 +22,7 @@ int main()
                 cout << "Tuesday";
                 break;
             case 2: 
-                cout << "Wensday";
+                cout << "Wednesday";
                 break;
             case 3:
                 cout << "Thursday";
